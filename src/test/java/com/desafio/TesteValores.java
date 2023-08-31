@@ -38,6 +38,13 @@ public class TesteValores {
         }
         Assertions.assertEquals(20.0, serviceValores.Maximo(valores));
     }
+    @Test
+    public void testValorMin(){
+        for(int i = 1; i <= 20 ; i++){
+            valores.add((double) i);
+        }
+        Assertions.assertEquals(1.0, serviceValores.Minimo(valores));
+    }
 
 
 
