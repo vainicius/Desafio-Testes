@@ -4,8 +4,6 @@ import com.desafio.Services.ServiceValores;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.nio.DoubleBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,6 +49,13 @@ public class TesteValores {
             valores.add((double) i);
         }
         Assertions.assertEquals(210, serviceValores.Soma(valores));
+    }
+    @Test
+    public void CalcDesvPadrao(){
+        for(int i = 1; i <= 20 ; i++){
+            valores.add((double) i);
+        }
+        Assertions.assertEquals(5.766281297335398, serviceValores.calcDesvPadrao(valores));
     }
 }
 
