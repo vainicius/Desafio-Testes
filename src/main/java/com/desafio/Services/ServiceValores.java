@@ -78,6 +78,12 @@ public class ServiceValores {
         return Math.sqrt(variancia);
     }
 
+    public Double Maximo(List<Double> valores) {
+        return Collections.max(valores);
+    }
+    public Double Minimo(List<Double> valores) {
+        return Collections.min(valores);
+    }
 }
 
 
