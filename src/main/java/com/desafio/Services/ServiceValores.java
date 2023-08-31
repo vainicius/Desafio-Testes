@@ -84,6 +84,15 @@ public class ServiceValores {
     public Double Minimo(List<Double> valores) {
         return Collections.min(valores);
     }
+    public Double Soma(List<Double> valores) {
+        Double calcSoma = (double) 0;
+        for (Double valor:
+                valores) {
+            calcSoma += valor;
+        }
+        return calcSoma;
+    }
+
 }
 
 
