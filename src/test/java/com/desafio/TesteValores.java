@@ -45,10 +45,12 @@ public class TesteValores {
         }
         Assertions.assertEquals(1.0, serviceValores.Minimo(valores));
     }
-
-
-
-
-
-
+    @Test
+    public void testSoma(){
+        for(int i = 1; i <= 20 ; i++){
+            valores.add((double) i);
+        }
+        Assertions.assertEquals(210, serviceValores.Soma(valores));
+    }
 }
+
