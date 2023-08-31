@@ -31,5 +31,17 @@ public class TesteValores {
         }
         Assertions.assertEquals(10.5, serviceValores.calcMediana(valores));
     }
+    @Test
+    public void testValorMax(){
+        for(int i = 1; i <= 20 ; i++){
+            valores.add((double) i);
+        }
+        Assertions.assertEquals(20.0, serviceValores.Maximo(valores));
+    }
+
+
+
+
+
 
 }
